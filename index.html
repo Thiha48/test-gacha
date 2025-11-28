@@ -7,10 +7,79 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 </head>
 <body>
-    <h1>This is Heading</h1>
+    <!-- <h1>This is Heading</h1> -->
     <script type="module" src="https://embed.croissant.buzz/embed/dist/widget.mjs"></script>
     <script type="module">
-    window.renderMyComponent({ contentUid: '507fb0b2-455f-4680-a798-f8309260f9c8', type: 'popup', testMode: true });
+    window.renderMyComponent({ contentUid: '4sGMQIA1', type: 'popup', testMode: false });
     </script>
+    
+
+    <!-- Button to open modal -->
+    <!-- <button id="openModalBtn"
+        style="padding: 10px 18px; background: #4c6ef5; color:white; border:none; border-radius:5px;">
+        Open Gacha
+    </button>
+
+    <div id="modal" style="
+        display:none;
+        position: fixed;
+        top:0; left:0;
+        width:100%; height:100%;
+        background: rgba(0,0,0,0.6);
+        z-index: 9999;
+        justify-content:center;
+        align-items:center;
+    ">
+        <div style="
+            width: 80%;
+            height: 80%;
+            background:white;
+            border-radius:10px;
+            padding: 0;
+            position:relative;
+            overflow:hidden;
+        ">
+            <span id="closeModalBtn" style="
+                position:absolute;
+                right:15px;
+                top:10px;
+                font-size:28px;
+                cursor:pointer;
+                z-index:10000;">&times;</span>
+
+            <iframe 
+                src="https://croissant.buzz/gacha/4sGMQIA1/playing?visitor_id=1&exhibition_id=2&booth_id=3"
+                style="width: 100%; height: 100%; border: none;">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const openBtn = document.getElementById("openModalBtn");
+        const closeBtn = document.getElementById("closeModalBtn");
+        const iframe = document.querySelector("iframe");
+        const cleanUrl = iframe.src; 
+
+        openBtn.onclick = () => {
+            iframe.src = cleanUrl;
+            modal.style.display = "flex";
+        };
+
+        closeBtn.onclick = () => {
+            modal.style.display = "none";
+            iframe.src = "";
+        };
+
+
+
+        // Close when clicking outside modal content
+        // window.onclick = (e) => {
+        //     if (e.target === modal) {
+        //         modal.style.display = "none";
+        //     }
+        // };
+    </script> -->
+
 </body>
 </html>
